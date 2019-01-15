@@ -193,14 +193,10 @@ def player_numbers(team_name)
           team_info[:players].each |name, stats|
 binding.pry
         #data.each do |name, stats|
-#stuck here
-
           #if data == team_name
-
             return stats[:number]
-
           #  end
-        end
+          end
         end
     end
   #  team_arr
