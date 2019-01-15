@@ -191,7 +191,7 @@ def player_numbers(team_name)
 
         #return data[:players]
         if attribute == :team_name && data == team_name
-          team_info[:players]
+          team_info[:players].each |name, stats|
 binding.pry
         #data.each do |name, stats|
 #stuck here
@@ -201,7 +201,7 @@ binding.pry
             return stats[:number]
 
           #  end
-        end
+      #  end
         end
     end
   #  team_arr
