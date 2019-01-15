@@ -190,16 +190,16 @@ def player_numbers(team_name)
 
 
         #return data[:players]
-        if attribute == :team_name
+        if attribute == :team_name && data == team_name
 
         data.each do |name, stats|
 #stuck here
 binding.pry
-          if data == team_name
+          #if data == team_name
 
             return stats[:number]
 
-            end
+          #  end
         end
         end
     end
