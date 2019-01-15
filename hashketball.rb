@@ -189,7 +189,6 @@ def player_numbers(team_name)
     team_info.map do |attribute, data|
 
 
-        #return data[:players]
         if attribute == :team_name && data == team_name
           team_info[:players].each |name, stats|
 binding.pry
@@ -201,7 +200,7 @@ binding.pry
             return stats[:number]
 
           #  end
-      #  end
+        end
         end
     end
   #  team_arr
